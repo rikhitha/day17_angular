@@ -1,0 +1,14 @@
+
+    <header> 2.EVENT BINDING  </header>
+    <h5>BUTTON ON CLICK</h5>
+    <button (click)="setMessage()">
+     Click here</button>
+     <h4>{{d}}</h4>
+    <h5>TEXTBOX KEY ENTER</h5>
+    <input type="text" (keyup.enter)="up()" />
+    <h4>{{message}}</h4>
+    <h5>TEXTBOX KEY ENTRY</h5>
+    <input type="text" (keyup)="upp()" />
+    <h4>{{m}}</h4>
+    <h5>TEXT AREA KEYUP</h5>
+  
