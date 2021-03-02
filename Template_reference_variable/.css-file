@@ -1,0 +1,10 @@
+h1{
+    color: black;
+    background-color: darkseagreen;
+    
+}
+h4{
+    color: black;
+    background-color: darkgrey;
+    font-family: cursive;
+}
