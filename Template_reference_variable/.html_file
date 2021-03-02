@@ -1,0 +1,36 @@
+<h1>TEMPLATE REFERENCE VARIABLE</h1>
+<h4>TEMPLATE REFERNCE VARIABLE FOR TEXTBOX</h4>
+<h6>Enter firstname</h6>
+<input type="text" placeholder="enter firstname" #firstname />
+<br>
+<br>
+<h6>Enter Lastname</h6>
+<input type="text" placeholder="enter lastname" #lastname>
+<br>
+<button (click)="show(firstname,lastname)">submit</button>
+<h4>TEMPLATE REFERNCE VARIABLE FOR TEXTAREA</h4>
+<h6>Enter Address</h6>
+<textarea #refVar
+                (keyup)="0"
+                (select)="0"
+                cols="25"
+                rows="3" placeholder="enter address here"></textarea>
+ <h3>textLength: {{refVar.textLength}}</h3>
+ <article>
+    <h4>SELECT DROPDOWN LIST</h4>
+    <h2><span>Select a day:</span></h2>
+    <select #new (change)="selectChangeHandler($event)">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+    </select>
+    <p><span>You selected: </span><b>{{selectedDay}}</b></p>
+</article>
+
+
+
+
+
+ 
