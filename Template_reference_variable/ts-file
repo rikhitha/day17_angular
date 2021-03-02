@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent 
+{
+  title = 'day17refernce';
+  frstname:String="";
+  lstname:String="";
+  g:String="";
+
+  show(Firstname:HTMLInputElement,Lastname:HTMLInputElement){
+    console.log(Firstname.value,Lastname.value);
+    
+
+
+  }
+  validate(x:HTMLInputElement)
+  {
+      console.log("length :"+x);
+  }
+  selectedDay: string = '';
+
+  
+  selectChangeHandler (event: any) {
+    
+    this.selectedDay = event.target.value;
+}
+
+}
+
