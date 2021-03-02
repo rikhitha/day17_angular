@@ -1,0 +1,13 @@
+div{
+    background-color: floralwhite;
+
+}
+header{
+    font-size: larger;
+    color:darkmagenta;
+    background:lavender;
+}
+h6{
+    font-size: medium;
+    color:dodgerblue;
+}
