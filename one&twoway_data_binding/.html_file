@@ -1,0 +1,23 @@
+  
+    <h4>ONE WAY DATABINDING</h4>
+<header class="hd">{{heading}}</header>
+<h6 class="top">{{cone}}</h6>
+<input type="text" [value]="term" />
+<img [src]="image1" width="300" height="300" />
+<img [src]="image2" width="300" height="300" />
+<img [src]="image4" width="300" height="300" />
+<h4>TWO WAY DATABINDING</h4>
+
+<input type="text" [(ngModel)]="place">
+<h5>{{place}}</h5>
+<h4>EVENT BINDING</h4>
+<input type="text" [(ngModel)]="pickupLocation" >
+<input type="text" [(ngModel)]="dropLocation" >
+<input type="submit"value="BOOK-MY-CAB" (click)="addLocation()">
+<header>Details</header>
+<h4>YOUR PICKUP LOCATION {{p}}at 11:30</h4>
+<h4>YOUR DROP LOCATION {{d}}</h4>>
+<h4>AMOUNT : {{price}}</h4>>
+<footer>THANKYOU</footer>
+
+    
