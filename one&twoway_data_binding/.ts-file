@@ -1,0 +1,44 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent  {
+  title = 'day17';
+  public heading:String="ROVE HOLIDAYS";
+  public pickupLocation:String="Enter pickup location";
+  public dropLocation:String="Enter drop location";
+  public p:String="";
+  public d:String="";
+  public price:number=0;
+
+  location=[];
+  addLocation()
+  {
+    this.p=this.pickupLocation;
+    this.d=this.dropLocation;
+    this.price=500;
+    
+  }
+
+  public term:String="Travel"
+  public cone:String="INDIA"
+  public ctwo:String="MALDIVES"
+  public place:String="NorthIndia"
+  public image1:String="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1171238184%2F960x0.jpg%3Ffit%3Dscale";
+  public image2:String="https://gos3.ibcdn.com/india-148045726738o.jpeg";
+  public image3:string="https://static.toiimg.com/photo/54327403.cms";
+  public image4:String="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZI7QLuGcMcwIijWr7pQoowYux-A8kEW8bA&usqp=CAU";
+  public image5:String="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZI7QLuGcMcwIijWr7pQoowYux-A8kEW8bA&usqp=CAU";
+  constructor(){
+    setTimeout(() => {
+      this.image1=this.image2;
+      this.image2=this.image3;
+      this.image4=this.image5;
+      this.cone=this.ctwo;
+    },5000);
+  }
+}
