@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent
+ {
+  title = 'day17eventbind';
+  d:String="";
+  v:number=0;
+  m:String="";
+  public message:string="";
+  setMessage()
+  {
+    this.d='Button Clicked';
+  }
+  up()
+  {
+    console.log("The text in the input");
+    this.message="key entered";
+
+  }
+  upp()
+  {
+    console.log("hai");
+    this.m="value entered in textbox ";
+  }
+  
+  
+  
+
+}
