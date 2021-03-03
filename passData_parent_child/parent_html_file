@@ -1,0 +1,7 @@
+<div style="border: solid 1px black; padding:15px; background-color: beige;">
+  <h1>Parent Component</h1> 
+  <app-child
+    [firstName]="firstName"
+    [lastName]="lastName"
+    ></app-child>
+</div>
