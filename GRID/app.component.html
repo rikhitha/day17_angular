@@ -1,0 +1,61 @@
+<div class="alert alert-dark" role="alert">
+  <h2>LIST OF PRODUCTS</h2>
+</div>
+<table border="5">
+    <thead>
+      
+      <th>Product_ID</th>
+      <th>product_name</th>
+      <th>Cost</th>
+      <th>Type</th>
+    </thead>
+    <tr *ngFor="let p of myprd;">
+      <td>{{p.pid}}</td>
+      <td>{{p.prdname}}</td>
+      <td>{{p.cost}}</td>
+      <td>{{p.type}}</td>
+    </tr>
+    
+  </table>
+  <br>
+  <br>
+<div>
+  <h2>ODD RECORDS</h2>
+
+<table border="5">
+<thead>
+  
+  <th>Product_ID</th>
+  <th>product_name</th>
+  <th>Cost</th>
+  <th>Type</th>
+</thead>
+<tr *ngFor="let p of myprd;">
+  <td *ngIf="p.type=='odd'">{{p.pid}}</td>
+  <td *ngIf="p.type=='odd'">{{p.prdname}}</td>
+  <td *ngIf="p.type=='odd'">{{p.cost}}</td>
+  <td *ngIf="p.type=='odd'">{{p.type}}</td>
+ 
+</tr>
+
+</table>
+<br>
+<br>
+<h2>EVEN RECORDS</h2>
+<table border="5">
+<thead>
+  
+  <th>Product_ID</th>
+  <th>product_name</th>
+  <th>Cost</th>
+  <th>Type</th>
+</thead>
+<tr *ngFor="let p of myprd;">
+  <td *ngIf="p.type=='even'">{{p.pid}}</td>
+  <td *ngIf="p.type=='even'">{{p.prdname}}</td>
+  <td *ngIf="p.type=='even'">{{p.cost}}</td>
+  <td *ngIf="p.type=='even'">{{p.type}}</td>
+ 
+</tr>
+
+</table>
